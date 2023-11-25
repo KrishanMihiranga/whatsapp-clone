@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp/common/Utils/coloors.dart';
 
 class CustomElevatedButton extends StatelessWidget {
 
