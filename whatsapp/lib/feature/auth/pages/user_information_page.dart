@@ -5,6 +5,7 @@ import 'package:whatsapp/common/extension/custom_theme_extension.dart';
 import 'package:whatsapp/common/widgets/custom_elevated_button.dart';
 import 'package:whatsapp/common/widgets/custom_icon_button.dart';
 import 'package:whatsapp/common/widgets/short_h_bar.dart';
+import 'package:whatsapp/feature/auth/pages/image_picker_page.dart';
 import 'package:whatsapp/feature/auth/widgets/custom_text_field.dart';
 
 class UserInformationPage extends StatefulWidget {
@@ -56,7 +57,14 @@ class _UserInformationageState extends State<UserInformationPage> {
                 ),
                 const SizedBox(width: 15),
                 imagePickerIcon(
-                  onTap: (){}, 
+                  onTap: (){
+                    Navigator.pop(context);
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const ImagePickerPage(),
+                      ),
+                    );
+                  }, 
                   icon: Icons.photo_camera_back_rounded, 
                   text: 'Gallery',
                 ),

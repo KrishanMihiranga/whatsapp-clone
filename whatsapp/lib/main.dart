@@ -5,7 +5,6 @@ import 'package:whatsapp/common/routes/routes.dart';
 import 'package:whatsapp/common/theme/dark_theme.dart';
 import 'package:whatsapp/common/theme/light_theme.dart';
 import 'package:whatsapp/feature/auth/pages/user_information_page.dart';
-import 'package:whatsapp/feature/welcome/pages/welcomePage.dart';
 import 'package:whatsapp/firebase_options.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
 
